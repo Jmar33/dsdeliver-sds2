@@ -83,7 +83,7 @@ function OrderLocation({onChangeLocation}: Props) {
                     />
                     <Marker position={address.position}>
                         <Popup>
-                            meu marcador
+                            {address.label}
                         </Popup>
                     </Marker>
                 </MapContainer>
