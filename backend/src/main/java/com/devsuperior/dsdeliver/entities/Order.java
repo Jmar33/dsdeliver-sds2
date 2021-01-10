@@ -88,13 +88,22 @@ public class Order implements Serializable {
 	public void setMoment(Instant moment) {
 		this.moment = moment;
 	}
-
+	
 	public OrderStatus getStatus() {
 		return status;
 	}
 
 	public void setStatus(OrderStatus status) {
 		this.status = status;
+	}
+	
+	public Double getTotal() {
+		double sum = 0.0;
+		for(Product p : products) {
+			sum+= p.getPrice();
+		}
+		
+		return sum;
 	}
 
 	public Set<Product> getProducts() {
