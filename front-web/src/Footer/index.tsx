@@ -6,7 +6,7 @@ function Footer() {
     return(
         <footer className="main-footer"> 
             App desenvolvido durante a 2ª ed. do evento Semana DevSuperior
-            <div className="footer-actions">
+            <div className="footer-icons">
                 <a href="https://youtube.com/c/DevSuperior" target="_new">
                     <YoutubeIcon />
                 </a>
